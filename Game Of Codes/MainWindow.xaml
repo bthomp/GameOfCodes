@@ -20,13 +20,21 @@
         <!-- Top Row -->
         
         <!-- (0,0) -->
-        <Button Grid.Row="0" Grid.Column="0" Content="First" Name="btnFirst" Click="btnFirst_Click"/>
+        <Border Grid.Row="0" Grid.Column="0" Background="Blue">
+            <Button Margin="8" Content="First" Name="btnFirst" Click="btnFirst_Click"/>
+        </Border>
         <!-- (0,1) -->
-        <Button Grid.Row="0" Grid.Column="1" Content="Second" Name="btnSecond" Click="btnSecond_Click"/>
+        <Border Grid.Row="0" Grid.Column="1" Background="Red">
+            <Button Margin="8" Content="Second" Name="btnSecond" Click="btnSecond_Click"/>
+        </Border>
         <!-- (0,2) -->
-        <Button Grid.Row="0" Grid.Column="2" Content="Third" Name="btnThird" Click="btnThird_Click"/>
+        <Border Grid.Row="0" Grid.Column="2" Background="LimeGreen">
+            <Button Margin="8" Content="Third" Name="btnThird" Click="btnThird_Click"/>
+        </Border>
         <!-- (0,3) -->
-        <Button Grid.Row="0" Grid.Column="3" Content="Fourth" Name="btnFourth" Click="btnFourth_Click"/>
+        <Border Grid.Row="0" Grid.Column="3" Background="Yellow">
+            <Button Margin="8" Content="Fourth" Name="btnFourth" Click="btnFourth_Click"/>
+        </Border>
         
         <!-- Main Canvas -->
         <!-- (1,0) -->
@@ -36,12 +44,13 @@
         
         <!-- Bottom Row -->
         <!-- (2,0) -->
-        <TextBlock Grid.Row="2" Grid.Column="0" Name="firstTB"/>
+        <Border Grid.Row="2" Grid.ColumnSpan="4" Name="bottomRowBorder"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Name="firstTB" TextAlignment="Center"/>
         <!-- (2,1) -->
-        <TextBlock Grid.Row="2" Grid.Column="1" Name="secondTB"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Name="secondTB" TextAlignment="Center"/>
         <!-- (2,2) -->
-        <TextBlock Grid.Row="2" Grid.Column="2" Name="thirdTB"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" Name="thirdTB" TextAlignment="Center"/>
         <!-- (2,3) -->
-        <TextBlock Grid.Row="2" Grid.Column="3" Name="fourthTB"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" Name="fourthTB" TextAlignment="Center"/>
     </Grid>
 </Window>
