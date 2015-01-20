@@ -37,6 +37,7 @@
         </Border>
         
         <!-- Main Canvas -->
+        <Canvas Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Name="MainCanvas" MouseMove="FindMouse" Background="White"></Canvas>
         <!-- (1,0) -->
         <!-- (1,1) -->
         <!-- (1,2) -->
